@@ -1,0 +1,94 @@
+/* Products card */
+
+.card{
+    padding: 10px;
+}
+
+.card-img-top{
+    max-width: 170px;
+    margin: 0 auto;
+    display: block;
+
+    @media all and (max-width: 480px){
+        max-width: 140px;
+    }
+}
+
+.card-title{
+    margin-bottom: 10px;
+}
+
+.card-body{
+    padding: 10px;
+
+    ul{
+        margin-left: 15px;
+        list-style: disc;
+        li{
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    .price{
+        color: $pink;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+:root {
+    --star-size:15px;
+    --star-color: #c2c2c2;
+    --star-background: #fc0;
+}
+  
+.stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    line-height: 1;
+    margin-bottom: 10px;
+    
+    &::before {
+      content: '★★★★★';
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+}
+
+/* Univers card */ 
+
+.univers-card{
+    flex: calc(100%/3);
+    padding: 10px;
+    a{
+        display: block;
+        position: relative;
+    }
+    @media all and (max-width: 640px){
+        flex: calc(100%/2);
+    }
+    @media all and (max-width: 480px){
+        flex: calc(100%);
+    }
+}
+
+.univers-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+
+}

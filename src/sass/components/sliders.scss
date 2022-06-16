@@ -1,0 +1,31 @@
+.swiper-button-prev, .swiper-button-next{
+    color: $dark-grey;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.35);
+    border-radius: 3px;
+
+    &::after{
+        font-size: 16px;
+    }
+}
+.swiper-products .swiper-wrapper{
+    padding-bottom: 20px;
+}
+.swiper-products-button-next, .swiper-products-button-prev{
+    @media all and (max-width: 767px){
+        display: none;
+    }
+}
+
+.swiper-pagination{
+    display: none;
+
+    @media all and (max-width: 767px){
+        display: block;
+    }
+}
+
+.swiper-pagination-bullet-active{
+    background-color: $grey;
+}

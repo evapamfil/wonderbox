@@ -1,0 +1,46 @@
+.univers{
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btn{
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+.news{
+    margin-bottom: 50px;
+    .container{
+        display: flex;
+    }
+    .news-block{
+        max-width: 50%;
+        width: 100%;
+    }
+    .news-img{
+        min-height: 200px;
+        background-image: url('assets/images/mise-en-anvant.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .news-text{
+        background-color: $orange;
+        padding: 20px 50px;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+
+    @media all and (max-width: 640px){
+        .container{
+            flex-wrap: wrap;
+        }
+        .news-block{
+            max-width: 100%;
+        }
+    }
+}
+    
